@@ -409,26 +409,26 @@
             <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Catering</h1>
             <p>Save time and money! Let us cater your next party!</p>
             <p><strong>We cater all occasions.</strong></p>
-            <!--- Pasting --->
+
             <div class="w3-center w3-border w3-border-dark-grey">
                 <div class="w3-row ">
-                    <a href="javascript:void(0)" onclick="openMenu(event, 'PastaTrays');" id="secondLink">
+                    <a href="javascript:void(0)" onclick="openMenuTwo(event, 'PastaTrays');" id="secondLink">
                         <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Pasta Trays</div>
                     </a>
-                    <a href="javascript:void(0)" onclick="openMenu(event, 'PizzasC');">
+                    <a href="javascript:void(0)" onclick="openMenuTwo(event, 'PizzasC');">
                         <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Pizzas</div>
                     </a>
-                    <a href="javascript:void(0)" onclick="openMenu(event, 'Wings');">
+                    <a href="javascript:void(0)" onclick="openMenuTwo(event, 'Wings');">
                         <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Wings</div>
                     </a>
-                    <a href="javascript:void(0)" onclick="openMenu(event, 'SaladTrays');">
+                    <a href="javascript:void(0)" onclick="openMenuTwo(event, 'SaladTrays');">
                         <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Salad Trays</div>
                     </a>
                 </div>
 
             </div>
         </div>
-        <div id="PastaTrays" class="w3-container menu w3-padding-32 w3-white">
+        <div id="PastaTrays" class="w3-container menuTwo w3-padding-32 w3-white">
             <h1><b>Half Tray</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
             <p class="w3-text-lightgrey">Feeds up to 10 people</p>
             <hr>
@@ -441,7 +441,7 @@
             </div>
             <hr>
         </div>
-        <div id="PizzasC" class="w3-container menu w3-padding-32 w3-white">
+        <div id="PizzasC" class="w3-container menuTwo w3-padding-32 w3-white">
             <h1><b>6 or more 1-Topping Pizzas (16″)</b><span class="w3-right w3-tag w3-dark-grey w3-round">$7.99 ea</span></h1>
             <p class="w3-text-lightgrey">extra toppings $1 per pizza</p>
             <hr>
@@ -450,7 +450,7 @@
             <hr>
 
         </div>
-        <div id="Wings" class="w3-container menu w3-padding-32 w3-white">
+        <div id="Wings" class="w3-container menuTwo w3-padding-32 w3-white">
             <h1><b>100 Wings</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
 
             <hr>
@@ -463,9 +463,11 @@
             </div>
             <hr>
         </div>
-        <div id="SaladTrays" class="w3-container menu w3-padding-32 w3-white">
+        <div id="SaladTrays" class="w3-container menuTwo w3-padding-32 w3-white">
             <div class="w3-center">
                 <h1><b>Half Trays:</b></h1>
+                <span class=" w3-tag w3-grey w3-round">Comes with 20 breadsticks.</span>
+                <p class="w3-text-grey">Feeds up to 10 people</p>
             </div>
             <h1><b>Garden Salad or Caesar</b><span class="w3-right w3-tag w3-dark-grey w3-round">$22.99</span></h1>
             <hr>
@@ -475,6 +477,8 @@
             <hr>
             <div class="w3-center">
                 <h1><b>Full Trays:</b></h1>
+                <span class=" w3-tag w3-grey w3-round">Comes with 40 breadsticks.</span>
+                <p class="w3-text-grey">Feeds up to 20 people</p>
             </div>
             <h1><b>Garden Salad or Caesar</b><span class="w3-right w3-tag w3-dark-grey w3-round">$39.99</span></h1>
             <hr>
@@ -482,13 +486,9 @@
             <hr>
             <h1><b>Chicken Caesar salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
             <hr>
-            <div class="w3-center">
-                <h1><b>Comes with salad, bread sticks, and one of the following:</b></h1>
-                <p class="w3-text-grey">Meat Lasagna, Chicken Alfredo,Chicken Parmesan, Ziti, Spaghetti with Meatballs, Meat Ravioli, Meat Tortellini, Cheese Manicotti, Cheese Ravioli</p>
-            </div>
-            <hr>
+
         </div>
-        <!--Stop Pasting --->
+
     </div>
 
 
@@ -520,6 +520,23 @@
             evt.currentTarget.firstElementChild.className += " w3-red";
         }
         document.getElementById("firstLink").click();
+    </script>
+    <script>
+        // Tabbed Menu
+        function openMenuTwo(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menuTwo");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+        }
+
         document.getElementById("secondLink").click();
     </script>
     <!-- Add Google Maps -->
