@@ -1,9 +1,7 @@
 body, html {height: 100%}
 .menu {display: none}
 .bgimg {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../images/background/toppings.jpeg);
+   
     min-height: 90%;
 }
 
