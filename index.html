@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
 
-<title>Romeo's Pizza &amp; Bistro</title>
-<link rel="stylesheet" href="/css/w3.css">
-<link rel="stylesheet" href="/css/styles.css" />
+<head>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Annie+Use+Your+Telescope">
+    <title>Romeo's Pizza &amp; Bistro</title>
 
-<style>
-    .w3-navbar li a {
-        padding: 16px;
-        float: left;
-    }
-</style>
+    <link rel="stylesheet" href="/css/w3.css">
+
+    <link rel="stylesheet" href="/css/styles.css" />
+
+
+    <style>
+        body {
+            font-family: 'Shadows Into Light', cursive;
+        }
+        
+        .w3-navbar li a {
+            padding: 16px;
+            float: left;
+        }
+    </style>
+</head>
 
 <body>
     <!-- Navbar (sit on top) -->
@@ -46,7 +56,7 @@
     </header>
 
     <!-- Menu Container -->
-    <div class="w3-container w3-black w3-padding-64 w3-xlarge" id="menu">
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
         <div class="w3-content">
 
             <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">MENU</h1>
@@ -413,84 +423,85 @@
             <p>Save time and money! Let us cater your next party!</p>
             <p><strong>We cater all occasions.</strong> Fresh Dough &amp; Sauce &amp; Vegetables Made Daily.
             </p>
+            <div class="w3-xxlarge">
+                <div class="w3-center w3-border w3-border-dark-grey">
+                    <div class="w3-row ">
+                        <a href="javascript:void(0)" onclick="openMenuTwo(event, 'PastaTrays');" id="secondLink">
+                            <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Pasta Trays</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenuTwo(event, 'PizzasC');">
+                            <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Pizzas</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenuTwo(event, 'Wings');">
+                            <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Wings</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenuTwo(event, 'SaladTrays');">
+                            <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Salad Trays</div>
+                        </a>
+                    </div>
 
-            <div class="w3-center w3-border w3-border-dark-grey">
-                <div class="w3-row ">
-                    <a href="javascript:void(0)" onclick="openMenuTwo(event, 'PastaTrays');" id="secondLink">
-                        <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Pasta Trays</div>
-                    </a>
-                    <a href="javascript:void(0)" onclick="openMenuTwo(event, 'PizzasC');">
-                        <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Pizzas</div>
-                    </a>
-                    <a href="javascript:void(0)" onclick="openMenuTwo(event, 'Wings');">
-                        <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Wings</div>
-                    </a>
-                    <a href="javascript:void(0)" onclick="openMenuTwo(event, 'SaladTrays');">
-                        <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Salad Trays</div>
-                    </a>
                 </div>
 
-            </div>
-
-            <div id="PastaTrays" class="w3-container menuTwo w3-padding-32 w3-white">
-                <h1><b>Half Tray</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
-                <p class="w3-text-lightgrey">Feeds up to 10 people</p>
-                <hr>
-                <h1><b>Full Tray</b><span class="w3-right w3-tag w3-dark-grey w3-round">$99.99</span></h1>
-                <p class="w3-text-lightgrey">Feeds up to 20 people</p>
-                <hr>
-                <div class="w3-center">
-                    <h1><b>Comes with salad, bread sticks, and one of the following:</b></h1>
-                    <p class="w3-text-grey">Meat Lasagna, Chicken Alfredo,Chicken Parmesan, Ziti, Spaghetti with Meatballs, Meat Ravioli, Meat Tortellini, Cheese Manicotti, Cheese Ravioli</p>
+                <div id="PastaTrays" class="w3-container menuTwo w3-padding-32 w3-white">
+                    <h1><b>Half Tray</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
+                    <p class="w3-text-lightgrey">Feeds up to 10 people</p>
+                    <hr>
+                    <h1><b>Full Tray</b><span class="w3-right w3-tag w3-dark-grey w3-round">$99.99</span></h1>
+                    <p class="w3-text-lightgrey">Feeds up to 20 people</p>
+                    <hr>
+                    <div class="w3-center">
+                        <h1><b>Comes with salad, bread sticks, and one of the following:</b></h1>
+                        <p class="w3-text-grey">Meat Lasagna, Chicken Alfredo,Chicken Parmesan, Ziti, Spaghetti with Meatballs, Meat Ravioli, Meat Tortellini, Cheese Manicotti, Cheese Ravioli</p>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-            </div>
-            <div id="PizzasC" class="w3-container menuTwo w3-padding-32 w3-white">
-                <h1><b>6 or more 1-Topping Pizzas (16″)</b><span class="w3-right w3-tag w3-dark-grey w3-round">$7.99 ea</span></h1>
-                <p class="w3-text-lightgrey">extra toppings $1 per pizza</p>
-                <hr>
-                <h1><b>6 or more Gourmet Pizzas (16″)</b><span class="w3-right w3-tag w3-dark-grey w3-round">$11.99ea</span></h1>
-                <p class="w3-text-lightgrey">up to 5 toppings</p>
-                <hr>
+                <div id="PizzasC" class="w3-container menuTwo w3-padding-32 w3-white">
+                    <h1><b>6 or more 1-Topping Pizzas (16″)</b><span class="w3-right w3-tag w3-dark-grey w3-round">$7.99 ea</span></h1>
+                    <p class="w3-text-lightgrey">extra toppings $1 per pizza</p>
+                    <hr>
+                    <h1><b>6 or more Gourmet Pizzas (16″)</b><span class="w3-right w3-tag w3-dark-grey w3-round">$11.99ea</span></h1>
+                    <p class="w3-text-lightgrey">up to 5 toppings</p>
+                    <hr>
 
-            </div>
-            <div id="Wings" class="w3-container menuTwo w3-padding-32 w3-white">
-                <h1><b>100 Wings</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
-
-                <hr>
-                <h1><b>50 Wings</b><span class="w3-right w3-tag w3-dark-grey w3-round">$34.99</span></h1>
-
-                <hr>
-                <div class="w3-center">
-                    <h1><b>Sauces:</b></h1>
-                    <p class="w3-text-grey">Mild , Hot , Extra Hot , Teriyaki , Sweet BBQ , Lemon Pepper , Garlic Parmesan</p>
                 </div>
-                <hr>
-            </div>
-            <div id="SaladTrays" class="w3-container menuTwo w3-padding-32 w3-white">
-                <div class="w3-center">
-                    <h1><b>Half Trays:</b></h1>
-                    <span class=" w3-tag w3-grey w3-round">Comes with 20 breadsticks.</span>
-                    <p class="w3-text-grey">Feeds up to 10 people</p>
-                </div>
-                <h1><b>Garden Salad or Caesar</b><span class="w3-right w3-tag w3-dark-grey w3-round">$22.99</span></h1>
-                <hr>
-                <h1><b>Greek Salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$22.99</span></h1>
-                <hr>
-                <h1><b>Chicken Caesar salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$39.99</span></h1>
-                <hr>
-                <div class="w3-center">
-                    <h1><b>Full Trays:</b></h1>
-                    <span class=" w3-tag w3-grey w3-round">Comes with 40 breadsticks.</span>
-                    <p class="w3-text-grey">Feeds up to 20 people</p>
-                </div>
-                <h1><b>Garden Salad or Caesar</b><span class="w3-right w3-tag w3-dark-grey w3-round">$39.99</span></h1>
-                <hr>
-                <h1><b>Greek Salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$49.99</span></h1>
-                <hr>
-                <h1><b>Chicken Caesar salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
-                <hr>
+                <div id="Wings" class="w3-container menuTwo w3-padding-32 w3-white">
+                    <h1><b>100 Wings</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
 
+                    <hr>
+                    <h1><b>50 Wings</b><span class="w3-right w3-tag w3-dark-grey w3-round">$34.99</span></h1>
+
+                    <hr>
+                    <div class="w3-center">
+                        <h1><b>Sauces:</b></h1>
+                        <p class="w3-text-grey">Mild , Hot , Extra Hot , Teriyaki , Sweet BBQ , Lemon Pepper , Garlic Parmesan</p>
+                    </div>
+                    <hr>
+                </div>
+                <div id="SaladTrays" class="w3-container menuTwo w3-padding-32 w3-white">
+                    <div class="w3-center">
+                        <h1><b>Half Trays:</b></h1>
+                        <span class=" w3-tag w3-grey w3-round">Comes with 20 breadsticks.</span>
+                        <p class="w3-text-grey">Feeds up to 10 people</p>
+                    </div>
+                    <h1><b>Garden Salad or Caesar</b><span class="w3-right w3-tag w3-dark-grey w3-round">$22.99</span></h1>
+                    <hr>
+                    <h1><b>Greek Salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$22.99</span></h1>
+                    <hr>
+                    <h1><b>Chicken Caesar salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$39.99</span></h1>
+                    <hr>
+                    <div class="w3-center">
+                        <h1><b>Full Trays:</b></h1>
+                        <span class=" w3-tag w3-grey w3-round">Comes with 40 breadsticks.</span>
+                        <p class="w3-text-grey">Feeds up to 20 people</p>
+                    </div>
+                    <h1><b>Garden Salad or Caesar</b><span class="w3-right w3-tag w3-dark-grey w3-round">$39.99</span></h1>
+                    <hr>
+                    <h1><b>Greek Salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$49.99</span></h1>
+                    <hr>
+                    <h1><b>Chicken Caesar salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
+                    <hr>
+
+                </div>
             </div>
         </div>
     </div>
