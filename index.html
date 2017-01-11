@@ -37,20 +37,20 @@
     <!-- Navbar (sit on top) -->
 
     <div class="w3-top ">
-        <ul class="w3-navbar w3-black w3-card-2 w3-xxlarge w3-center " id="myNavbar">
+        <ul class="w3-navbar w3-black w3-card-2 w3-xlarge w3-center " id="myNavbar">
 
             <div class="w3-hide-large" style="padding:16px;">
 
-                <a href="#home" class=""><img src="images/logo.png" style="height:54.4px" alt="logo">Romeo’s Pizza &amp; Bistro</a>
+                <a href="#home" class="">Romeo’s Pizza &amp; Bistro</a>
 
             </div>
 
             <div class="w3-hide-small w3-hide-medium">
                 <li>
-                    <a href="#home" class=""><img src="images/logo.png" style="height:54.4px" alt="logo">Romeo’s Pizza &amp; Bistro</a>
+                    <a href="#home" class="">Romeo’s Pizza &amp; Bistro</a>
                 </li>
 
-                <li class="w3-right">
+                <li class="w3-right" style="letter-spacing:4px;">
                     <a href="#menu">Menu</a>
                     <a href="#about">About</a>
                     <a href="#catering">Catering</a>
@@ -447,16 +447,16 @@
                 <div class="w3-center w3-border w3-border-dark-grey">
                     <div class="w3-row ">
                         <a href="javascript:void(0)" onclick="openMenuTwo(event, 'PastaTrays');" id="secondLink">
-                            <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Pasta Trays</div>
+                            <div class="w3-col l3 tablinkTwo w3-padding-large w3-hover-pale-green">Pasta Trays</div>
                         </a>
                         <a href="javascript:void(0)" onclick="openMenuTwo(event, 'PizzasC');">
-                            <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Pizzas</div>
+                            <div class="w3-col l3 tablinkTwo w3-padding-large w3-hover-pale-green">Pizzas</div>
                         </a>
                         <a href="javascript:void(0)" onclick="openMenuTwo(event, 'Wings');">
-                            <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Wings</div>
+                            <div class="w3-col l3 tablinkTwo w3-padding-large w3-hover-pale-green">Wings</div>
                         </a>
                         <a href="javascript:void(0)" onclick="openMenuTwo(event, 'SaladTrays');">
-                            <div class="w3-col s3 tablinkTwo w3-padding-large w3-hover-red">Salad Trays</div>
+                            <div class="w3-col l3 tablinkTwo w3-padding-large w3-hover-pale-green">Salad Trays</div>
                         </a>
                     </div>
 
@@ -566,10 +566,10 @@
             }
             tablinks = document.getElementsByClassName("tablinkTwo");
             for (i = 0; i < x.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                tablinks[i].className = tablinks[i].className.replace(" w3-pale-green", "");
             }
             document.getElementById(menuName).style.display = "block";
-            evt.currentTarget.firstElementChild.className += " w3-red";
+            evt.currentTarget.firstElementChild.className += " w3-pale-green";
         }
 
         document.getElementById("secondLink").click();
