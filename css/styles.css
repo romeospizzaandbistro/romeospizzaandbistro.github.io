@@ -22,3 +22,27 @@ html {
 }
 
 .fb-page {}
+
+.menuItems h1 {
+    font-size: 24px!important
+}
+
+.w3-red,
+.w3-hover-red:hover {
+    color: #fff!important;
+    background-color: #d2503a!important
+}
+
+.w3-blue-grey,
+.w3-hover-blue-grey:hover,
+.w3-blue-gray,
+.w3-hover-blue-gray:hover {
+    color: #fff!important;
+    background-color: #5e63d8!important
+}
+
+.w3-pale-green,
+.w3-hover-pale-green:hover {
+    color: #000!important;
+    background-color: #fff9db!important
+}
