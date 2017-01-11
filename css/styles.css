@@ -27,6 +27,12 @@ html {
     font-size: 24px!important
 }
 
+.crust,
+.hover-crust:hover {
+    color: #fff!important;
+    background-color: #e99534!important
+}
+
 .w3-red,
 .w3-hover-red:hover {
     color: #fff!important;
