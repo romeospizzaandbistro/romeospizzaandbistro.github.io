@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Best pizza place in Atlanta's airport area. Fast delivery.">
+    <meta name="keywords" content="pizza,pasta,food,restaurant,fast,cheap,good,tasty,warm,atlanta,airport,delivery,dining,dineing,dine in,take out,eat24">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <title>Romeo's Pizza &amp; Bistro</title>
+
+    <link rel="stylesheet" href="/css/w3.css">
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Shadows Into Light Two', serif;
+        }
+        
+        .w3-navbar li a {
+            padding: 16px;
+            float: left;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+
+    <div class="w3-top ">
+        <ul class="w3-navbar w3-black w3-card-4 w3-xlarge w3-center " id="myNavbar">
+
+            <div class="w3-hide-large" style="padding:16px;">
+
+                <a href="#home" class="">Romeo’s Pizza &amp; Bistro</a>
+
+            </div>
+
+            <div class="w3-hide-small w3-hide-medium">
+                <li>
+                    <a href="index.html" class="">Romeo’s Pizza &amp; Bistro</a>
+                </li>
+
+                <li class="w3-right" style="letter-spacing:4px;">
+                    <a href="index.html#menu">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="catering.html">Catering</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+    <!-- About Container -->
+    <div class="w3-container w3-padding-64 w3-red  w3-xlarge" id="about">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo">About</h1>
+            <h1><b>Call Us</b></h1>
+            <p><b>(404)996-6941</b></p>
+
+            <img src="/images/building.jpg" style="width:50%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+            <h1><b>Hours</b></h1>
+
+            <div class="w3-row">
+                <div>
+                    <p>Monday-Thursday: 10am to 1am</p>
+                    <p>Friday-Saturday: 10am to 2am</p>
+                    <p>Sunday: 10am to 12am</p>
+                </div>
+
+            </div>
+            <h1><b>Location</b></h1>
+            <p>3333 Main Street Atlanta GA , 30337</p>
+        </div>
+    </div>
+
+    <!-- Location (with google maps) -->
+    <div id="location" class="">
+
+        <div id="googleMap" class="" style="width:100%;height:400px;"></div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-black w3-padding-48 w3-container">
+        <div class=w3-content>
+            <div class="fb-page" data-href="https://www.facebook.com/Romeos-Pizza-Bistro-375414912850473/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/Romeos-Pizza-Bistro-375414912850473/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Romeos-Pizza-Bistro-375414912850473/">Romeo&#039;s Pizza &amp; Bistro</a></blockquote>
+            </div>
+            <hr>
+            <div class="w3-center w3-tiny">
+                RomeosPizzaAndBistro.com © 2017
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+
+        }
+        document.getElementById("firstLink").click();
+    </script>
+    <script>
+        // Tabbed Menu
+        function openMenuTwo(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menuTwo");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinkTwo");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" crust", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " crust";
+
+        }
+
+        document.getElementById("secondLink").click();
+    </script>
+    <!-- Add Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdoVd-yuu7a7AK4kwHV4F5_5n-J3mXIlo">
+    </script>
+
+    <script>
+        // Google Map Location
+        var myCenter = new google.maps.LatLng(33.664630, -84.446086);
+
+        function initialize() {
+            var mapProp = {
+                center: myCenter,
+                zoom: 12,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+
+            marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=355812134567946";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 300);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

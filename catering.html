@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Best pizza place in Atlanta's airport area. Fast delivery.">
+    <meta name="keywords" content="pizza,pasta,food,restaurant,fast,cheap,good,tasty,warm,atlanta,airport,delivery,dining,dineing,dine in,take out,eat24">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <title>Romeo's Pizza &amp; Bistro</title>
+
+    <link rel="stylesheet" href="/css/w3.css">
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Shadows Into Light Two', serif;
+        }
+        
+        .w3-navbar li a {
+            padding: 16px;
+            float: left;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+
+    <div class="w3-top ">
+        <ul class="w3-navbar w3-black w3-card-4 w3-xlarge w3-center " id="myNavbar">
+
+            <div class="w3-hide-large" style="padding:16px;">
+
+                <a href="#home" class="">Romeo’s Pizza &amp; Bistro</a>
+
+            </div>
+
+            <div class="w3-hide-small w3-hide-medium">
+                <li>
+                    <a href="index.html" class="">Romeo’s Pizza &amp; Bistro</a>
+                </li>
+
+                <li class="w3-right" style="letter-spacing:4px;">
+                    <a href="index.html#menu">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="catering.html">Catering</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+
+
+    <div id="catering" class="w3-container w3-padding-64 w3-blue-grey w3-xlarge">
+
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Catering</h1>
+            <p>Save time and money! Let us cater your next party!</p>
+            <p><strong>We cater all occasions.</strong> Fresh Dough &amp; Sauce &amp; Vegetables Made Daily.
+            </p>
+            <div class="w3-xxlarge">
+                <div class="w3-center w3-border w3-border-white">
+                    <div class="w3-row ">
+                        <a href="javascript:void(0)" onclick="openMenuTwo(event, 'PastaTrays');" id="secondLink">
+                            <div class="w3-col l3 tablinkTwo w3-padding-large hover-crust">Pasta Trays</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenuTwo(event, 'PizzasC');">
+                            <div class="w3-col l3 tablinkTwo w3-padding-large hover-crust">Pizzas</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenuTwo(event, 'Wings');">
+                            <div class="w3-col l3 tablinkTwo w3-padding-large hover-crust">Wings</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenuTwo(event, 'SaladTrays');">
+                            <div class="w3-col l3 tablinkTwo w3-padding-large hover-crust">Salad Trays</div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="w3-xlarge menuItems">
+                    <div id="PastaTrays" class="w3-container menuTwo w3-padding-32 w3-white">
+                        <h1><b>Half Tray</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
+                        <p class="w3-text-lightgrey">Feeds up to 10 people</p>
+                        <hr>
+                        <h1><b>Full Tray</b><span class="w3-right w3-tag w3-dark-grey w3-round">$99.99</span></h1>
+                        <p class="w3-text-lightgrey">Feeds up to 20 people</p>
+                        <hr>
+                        <div class="w3-center">
+                            <h1><b>Comes with salad, bread sticks, and one of the following:</b></h1>
+                            <p class="w3-text-grey">Meat Lasagna, Chicken Alfredo,Chicken Parmesan, Ziti, Spaghetti with Meatballs, Meat Ravioli, Meat Tortellini, Cheese Manicotti, Cheese Ravioli</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div id="PizzasC" class="w3-container menuTwo w3-padding-32 w3-white">
+                        <h1><b>6 or More<br>1-Topping Pizzas (16″)</b><span class="w3-right w3-tag w3-dark-grey w3-round">$7.99 ea</span></h1>
+                        <p class="w3-text-lightgrey">Extra toppings $1 per pizza</p>
+                        <hr>
+                        <h1><b>6 or More<br>Gourmet Pizzas (16″)</b><span class="w3-right w3-tag w3-dark-grey w3-round">$11.99ea</span></h1>
+                        <p class="w3-text-lightgrey">up to 5 toppings</p>
+                        <hr>
+
+                    </div>
+                    <div id="Wings" class="w3-container menuTwo w3-padding-32 w3-white">
+                        <h1><b>100 Wings</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
+
+                        <hr>
+                        <h1><b>50 Wings</b><span class="w3-right w3-tag w3-dark-grey w3-round">$34.99</span></h1>
+
+                        <hr>
+                        <div class="w3-center">
+                            <h1><b>Sauces:</b></h1>
+                            <p class="w3-text-grey">Mild, Hot, Extra Hot, Teriyaki, Sweet BBQ, Lemon Pepper, Garlic Parmesan</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div id="SaladTrays" class="w3-container menuTwo w3-padding-32 w3-white">
+                        <div class="w3-center">
+                            <h1><b>Half Trays:</b></h1>
+                            <span class=" w3-tag w3-grey w3-round">Comes with 20 breadsticks.</span>
+                            <p class="w3-text-grey">Feeds up to 10 people</p>
+                        </div>
+                        <h1><b>Garden Salad<br>or Caesar</b><span class="w3-right w3-tag w3-dark-grey w3-round">$22.99</span></h1>
+                        <hr>
+                        <h1><b>Greek Salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$22.99</span></h1>
+                        <hr>
+                        <h1><b>Chicken Caesar salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$39.99</span></h1>
+                        <hr>
+                        <div class="w3-center">
+                            <h1><b>Full Trays:</b></h1>
+                            <span class=" w3-tag w3-grey w3-round">Comes with 40 breadsticks.</span>
+                            <p class="w3-text-grey">Feeds up to 20 people</p>
+                        </div>
+                        <h1><b>Garden Salad<br>or Caesar</b><span class="w3-right w3-tag w3-dark-grey w3-round">$39.99</span></h1>
+                        <hr>
+                        <h1><b>Greek Salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$49.99</span></h1>
+                        <hr>
+                        <h1><b>Chicken Caesar salad</b><span class="w3-right w3-tag w3-dark-grey w3-round">$59.99</span></h1>
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-black w3-padding-48 w3-container">
+        <div class=w3-content>
+            <div class="fb-page" data-href="https://www.facebook.com/Romeos-Pizza-Bistro-375414912850473/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/Romeos-Pizza-Bistro-375414912850473/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Romeos-Pizza-Bistro-375414912850473/">Romeo&#039;s Pizza &amp; Bistro</a></blockquote>
+            </div>
+            <hr>
+            <div class="w3-center w3-tiny">
+                RomeosPizzaAndBistro.com © 2017
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-red";
+
+        }
+        document.getElementById("firstLink").click();
+    </script>
+    <script>
+        // Tabbed Menu
+        function openMenuTwo(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menuTwo");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinkTwo");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" crust", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " crust";
+
+        }
+
+        document.getElementById("secondLink").click();
+    </script>
+    <!-- Add Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdoVd-yuu7a7AK4kwHV4F5_5n-J3mXIlo">
+    </script>
+
+    <script>
+        // Google Map Location
+        var myCenter = new google.maps.LatLng(33.664630, -84.446086);
+
+        function initialize() {
+            var mapProp = {
+                center: myCenter,
+                zoom: 12,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+            var marker = new google.maps.Marker({
+                position: myCenter,
+            });
+
+            marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=355812134567946";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 300);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
